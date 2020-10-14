@@ -1,0 +1,40 @@
+.image {
+    width: 300px;
+    height: 300px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+header, footer {
+    background-color:blue ;
+}
+
+.site-title {
+    color: red;
+}
+
+#my-image {
+    box-shadow: 0 0 2px 1px black;
+}
+
+ol {
+    list-style: square;
+}
+
+ol li:nth-child(odd) {
+    background-color: chartreuse;
+}
+
+nav a{
+    text-decoration: none;
+    background-color: chartreuse;
+    border: 8px solid black;
+}
+
+nav a:hover,
+nav a:focus {
+    background-color: blueviolet;
+}

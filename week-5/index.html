@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<hmtl>
+<hmtl lang="en">
 
     <head>
         <meta charset="UTF-8">
         <title>Regie's Coffee Shop - Home</title>
+        <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
         <!-- comment block - control + / -->
         <!--Site header-->
-        <header>
+        <header style="background:peru">
             <h1>Reggie's Coffee Shop</h1>
             <nav>
                 <ul>
@@ -20,12 +21,14 @@
         <!-- starting the main content of the page -->
         <main>
             <!-- Adding an on page link to jump to our section -->
-            <a href="#tow">Treat of the week</a>
+            <!-- Adding class orange-link to the a tag -->
+            <a href="#tow" class="orange-link">Treat of the week</a>
             <article>
                 <h2>Our Story</h2>
                 <!-- Adding image -->
                 <img src="images/coffee-shop.jpg" alt="Coffee cup on top of pile of coffee beans">
-                <blockquote>
+                <!-- Adding class large-text -->
+                <blockquote class="large-text">
                     We love coffee <cite>- Reggie and Maria</cite>
                 </blockquote>
                 <p>
@@ -69,12 +72,12 @@
                     <dd>all purpose flower, baking soda, baking powder, salt, butter, suagr, eggs, bananas, lemon juice</dd>
                 </dl>
                 <!-- Adding a link to tyhe recipe site and open in new tab-->
-                <a href="https://www.yummly.com/recipe/Banana-Bread-1033797?prm-v1" target="_blank">Get the Recipe</a>
+                <a href="https://www.yummly.com/recipe/Banana-Bread-1033797?prm-v1" target="_blank" class="orange-link large-text">Get the Recipe</a>
             </section>
             <!-- Adding section for menu -->
             <section>
                 <h3>Menu Specials</h3>
-                <table border>
+                <table>
                     <thead>
                         <tr>
                             <th colspan="2">Items</th>
@@ -101,10 +104,10 @@
             </section>
         </main>
         <!-- Website Footer -->
-        <foooter>
+        <footer class="site-footer">
             <!-- HTML Entities -->
             Copyright &copy; Reggie's Coffee Shop, 2020
-        </foooter>
+        </footer>
     </body>
 
 </hmtl>
