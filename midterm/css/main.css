@@ -1,0 +1,99 @@
+/* setting background color */
+body {
+    background-color: #aad4cf;
+}
+
+/* setting background colour and margins */
+main {
+    background-color: rgb(198, 250, 243);
+    margin-left: 400px;
+    margin-right: 400px;
+}
+
+/* header image */
+header {
+    background-image: url(../images/lone-starfish-wide.jpg);
+    background-size:cover ;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+/* header text */
+h1 {
+    text-align: center;
+    padding-top: 300px;
+    padding-bottom: 150px;
+    color: white;
+    font-size: 4em;
+}
+
+/* removing bullets */
+.navlist {
+    list-style: none;
+}
+
+/* styling nav bar */
+nav ul li {
+    font-size: 2em;
+    display: inline-block;
+    width: 33%;
+    text-align: center;
+}
+
+/* styling nav bar border */
+.homeli {
+    border-right:1px solid gray ;
+}
+
+/* styling paragraph heading */
+h2 {
+    padding-left: 25px;
+}
+
+/* styling image */
+img {
+    padding-left: 25px;
+    width: 200px;
+    height: 200px;
+    size: 50px 50px;
+    display: inline-block;
+    float: left;
+}
+
+/* styling first paragraph text */
+p {
+    padding-left: 25px;
+    line-height: 1.5em;
+}
+
+/* styling form */
+
+form {
+    margin-left: 25px;
+    margin-right: 25px;
+    border: 1px solid black;
+    padding: 25px;
+}
+
+.answer {
+    width: 95%;
+}
+
+.message {
+    height: 75px;
+}
+
+button {
+    background-color: rgb(198, 250, 243);
+    box-shadow: none;
+    border: 1px solid black;
+    margin-top: 15px;
+    padding: 10px;
+}
+
+/* footer */
+footer{
+    padding: 50px;
+    text-align: right;
+}
