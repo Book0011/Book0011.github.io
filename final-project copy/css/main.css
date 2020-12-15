@@ -1,0 +1,273 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* ----------------------------
+                CUSTOM STYLES
+    ------------------------------*/
+
+body {
+    padding: 20px;
+    max-width: 1200px;
+    font-family: open sans;
+}
+
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* HEADER STYLES */
+header {
+    background-color: #222;
+    padding-bottom: 20px;
+}
+
+.nav {
+    display: inline;
+    width: 100%;
+}
+
+h3 {
+    text-align: center;
+    padding: 20px;
+    color: #c78c06;
+}
+
+.homeorange {
+    color: black;
+    background-color: #c78c06;
+    margin-top: -100px;
+    padding-top: 150px;
+}
+
+input {
+    width: 90%;
+    text-align: left;
+    color: rgb(114, 114, 114);
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.navbtn {
+    width: 10%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    float: right;
+    margin-top: -28.7px;
+}
+
+/* HOME SECTION */
+
+.home {
+    margin: auto;
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    width: 100%;
+    height: 700px;
+    background: url("../images/main-banner.jpg") no-repeat center bottom;
+    background-size: cover;
+}
+
+.homecontent {
+    padding-top: 100px;
+    padding-left: 20px;
+    height: 600px;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.home-title {
+    color: white;
+    font-weight: bold;
+    font-size: 4rem;
+    line-height: 6rem;
+}
+
+.home-text {
+    line-height: 1.5rem;
+    margin: 30px 0;
+    color: white;
+}
+
+/* HOME BUTTON */
+
+.connect-with-us {
+    display: flex;
+    float: left;
+    margin-top: 20px;
+    height: 175px;
+    width: 350px;
+    background-color: #c78c06;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.homebtn {
+    color: black;
+    padding-left: 20px;
+}
+
+.homebtntxt {
+    padding: 20px;
+}
+
+/* ABOUT US SECTION */
+
+.about-us {
+    padding: 20px;
+    background-color: #ffe6ac;
+}
+
+.about-img {
+    width: 100%;
+
+}
+
+.about-us-head {
+    font-size: 4rem;
+    font-weight: 900;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.about-us-text2 {
+    padding-top: 30px;
+}
+
+/* OUR SERVICES SECTION */
+
