@@ -271,3 +271,52 @@ input {
 
 /* OUR SERVICES SECTION */
 
+#services {
+    padding: 20px;
+}
+
+.service-head {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+/* Digital Service Sectoin */
+
+.digital-pic {
+    width: 100%;
+}
+
+.service-type-wide {
+    background-color: #ffe6ac;
+    margin-bottom: 20px;
+}
+
+#services h3 {
+    color: black;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: left;
+}
+
+.service-text {
+    padding: 20px;
+}
+
+.digibtn {
+        display: flex;
+        float: left;
+        margin: 20px;
+        height: 100px;
+        width: 350px;
+        background-color:black;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+        color: white;
+}
+
+.digibtn i {
+    color: white;
+}
