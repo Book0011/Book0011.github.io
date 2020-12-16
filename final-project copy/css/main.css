@@ -142,6 +142,7 @@ body {
     padding: 20px;
     max-width: 1200px;
     font-family: open sans;
+    line-height: 1.5rem;
 }
 
 
@@ -153,13 +154,15 @@ a {
 /* HEADER STYLES */
 header {
     background-color: #222;
-    padding-bottom: 20px;
+    padding: 20px;
 }
 
 .nav {
     display: inline;
     width: 100%;
 }
+
+
 
 h3 {
     text-align: center;
@@ -170,24 +173,34 @@ h3 {
 .homeorange {
     color: black;
     background-color: #c78c06;
-    margin-top: -100px;
+    margin-top: -105px;
     padding-top: 150px;
 }
 
 input {
-    width: 90%;
+    display: flex;
+    width: 88%;
+    height: 20px;
     text-align: left;
     color: rgb(114, 114, 114);
     padding-top: 5px;
     padding-bottom: 5px;
+
 }
 
 .navbtn {
+    background-color: #222;
+    color: #c78c06;
+    border: 1px solid #c78c06;
+    height: 33px;
     width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding-top: 5px;
     padding-bottom: 5px;
     float: right;
-    margin-top: -28.7px;
+    margin-top: -33.7px;
 }
 
 /* HOME SECTION */
@@ -272,24 +285,27 @@ input {
 /* OUR SERVICES SECTION */
 
 #services {
-    padding: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 30px;
 }
 
 .service-head {
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
     font-size: 3rem;
     font-weight: bold;
 }
 
-/* Digital Service Sectoin */
+/* Digital Service Section */
 
-.digital-pic {
+.service-pic {
     width: 100%;
 }
 
-.service-type-wide {
+.service-type-digi {
     background-color: #ffe6ac;
+    padding-bottom: 20px;
     margin-bottom: 20px;
 }
 
@@ -304,19 +320,191 @@ input {
     padding: 20px;
 }
 
-.digibtn {
-        display: flex;
-        float: left;
-        margin: 20px;
-        height: 100px;
-        width: 350px;
-        background-color:black;
-        justify-content: center;
-        align-items: center;
-        font-size: 2rem;
-        color: white;
+
+.markbtn {
+    display: flex;
+    margin-left: 20px;
+    width: 275px;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.25rem;
+    height: 100px;
+    background-color: black;
+    color: white;
 }
 
-.digibtn i {
+/* Adding our vision section */
+
+.our-vision {
     color: white;
+    background: url(../images/vision.jpg) no-repeat center;
+    background-size: cover;
+    height: 310px;
+}
+
+.our-vision h3 {
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: left;
+    padding-top: 30px;
+}
+
+.our-vision p {
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.vissionbtn {
+    display: flex;
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 275px;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.25rem;
+    height: 75px;
+    background-image: linear-gradient(to right, rgb(5, 22, 37), rgb(13, 47, 75));
+    color: white;
+    border: 2px solid rgb(177, 117, 27);
+}
+
+/* Team Section */
+
+#team {
+    margin: 20px 10px;
+}
+
+.name {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    background-color: #ffe6ac;
+}
+
+.our-team {
+    font-size: 3rem;
+    font-weight: 900;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+.name img {
+    width: 100%;
+}
+
+.team-name {
+    color: black;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: left;
+    padding: 15px 0px 10px 10px;
+}
+
+.role {
+    font-weight: 900;
+    padding-left: 10px;
+}
+
+hr {
+    border: 1px solid rgb(177, 117, 27);
+    margin: 10px;
+}
+
+.team-text {
+    padding: 10px;
+}
+
+/* Contact Us Section */
+
+#contact {
+    margin: 50px 10px 10px 10px;
+}
+
+.contact-head {
+    font-size: 3rem;
+    font-weight: 900;
+    padding-bottom: 50px;
+}
+
+.contact-us h3 {
+    color: black;
+    text-align: left;
+    font-size: 2rem;
+    font-weight: 900;
+    padding: 0px;
+    padding-bottom: 20px;
+}
+
+/* CONTACT FORM */
+
+form {
+    margin-bottom: 30px;
+}
+
+input[type=email] {
+    width: 100%;
+}
+
+#contact input[type=text] {
+    width: 100%;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+}
+
+.msgtext {
+    margin-bottom: 10px;
+}
+
+form button {
+    font-size: 1.5rem;
+    border: none;
+    background-color: black;
+    color: #c78c06;
+}
+
+/* CONTACT TABLE */
+
+table {
+    width: 100%;
+}
+
+th {
+    background-color: #ffe6ac;
+}
+
+table,
+tr,
+th,
+td {
+    padding: 10px;
+    border: 1px solid black;
+}
+
+/* Location Section */
+
+.location h2 {
+    font-size: 2rem;
+    font-weight: 900;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.location iframe {
+    width: 100%;
+}
+
+/* FOOTER SECTION */
+
+footer {
+    color: #c78c06;
+    background-color: #222;
+    line-height: 2rem;
+    padding: 20px 0px 10px 10px;
+}
+
+footer a {
+    text-decoration: underline;
 }
