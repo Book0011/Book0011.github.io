@@ -381,6 +381,12 @@ input {
     background-color: #ffe6ac;
 }
 
+.name2 {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    background-color: #ffe6ac;
+}
+
 .our-team {
     font-size: 3rem;
     font-weight: 900;
@@ -389,6 +395,10 @@ input {
 }
 
 .name img {
+    width: 100%;
+}
+
+.name2 img {
     width: 100%;
 }
 
@@ -507,4 +517,129 @@ footer {
 
 footer a {
     text-decoration: underline;
+}
+
+/* ---------------------------
+         DESKTOP STYLING
+-----------------------------*/
+
+@media screen and (min-width: 760px) {
+
+    /* Adding left and right padding for multiple parts of site */
+
+    .content {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    /* Styling the nav bar */
+
+    .homeorange {
+        margin: 0px;
+        padding: 20px;
+        background-color: #222;
+        color: #c78c06;
+    }
+    nav {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 2fr;
+    }
+
+    nav h3 {
+        display: grid;
+        justify-content: center;
+        align-content: center;
+    }
+
+    nav form {
+        padding-top: 30px;
+        height: auto;
+    }
+
+    nav input[type=text] {
+        display: grid;
+        justify-content: center;
+        align-content: center;
+
+    }
+
+    nav iframe {
+        display: grid;
+        justify-content: center;
+        align-content: center;
+
+    }
+
+    /* Styling the welcome section */
+
+    .home-title {
+        padding-right: 10rem;
+        font-size: 3rem;
+    }
+
+
+    /* about us section */
+
+    .about-us {
+        height: 220px;
+    }
+
+    .about-us img {
+        display: flexbox;
+        width: 40%;
+        float: left;
+    }
+
+    .about-text {
+        display: flexbox;
+        width: 55%;
+        float: right;
+        padding-bottom: 20px;
+    }
+
+    /* adding services styles */
+
+    .service-type-wide {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 0px;
+    }
+
+    .service-type-skinny {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* Team Section */
+
+    .name {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
+
+    .name2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+        grid-template-areas: 
+        "one two"
+    }
+
+    .bobpic{
+        grid-area: two;
+    }
+
+    .name2 .name-writing {
+        grid-area: one;
+    }
+
+
+
+
+
 }
