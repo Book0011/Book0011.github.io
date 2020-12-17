@@ -258,61 +258,65 @@
 
         <!-- Adding Contact Us Section -->
         <section id="contact">
-            <div class="contact-us">
-                <h2 class="contact-head">
-                    Contact Us
-                </h2>
-                <h3>
-                    Send us a message
-                </h3>
-                <!-- Adding Form -->
-                <form action="contact.html" method="get">
-                    <div>
-                        <label for="fullname">Your Name</label>
-                        <input type="text" id="fullname" name="fullname">
+            <div class="content">
+                <div class="contact-us">
+                    <h2 class="contact-head">
+                        Contact Us
+                    </h2>
+                    <div class="leftcontact">
+                        <h3>
+                            Send us a message
+                        </h3>
+                        <!-- Adding Form -->
+                        <form action="contact.html" method="get">
+                            <div>
+                                <label for="fullname">Your Name</label>
+                                <input type="text" id="fullname" name="fullname">
+                            </div>
+                            <div>
+                                <label class="email" for="youremail">Email</label>
+                                <input type="email" id="youremail" name="youremail" required>
+                            </div>
+                            <div class="msgtext">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message"></textarea>
+                            </div>
+                            <button type="submit">Send</button>
+                        </form>
                     </div>
-                    <div>
-                        <label class="email" for="youremail">Email</label>
-                        <input type="email" id="youremail" name="youremail" required>
+                    <!-- Adding Table -->
+                    <div class="rightcontact">
+                        <table class="contact-table">
+                            <caption>Hours of operation</caption>
+                            <thead>
+                                <tr>
+                                    <th class="background-table" colspan="1">Days</th>
+                                    <th class="background-table" rowspan="1">Hours</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Monday - Friday</td>
+                                    <td>9 AM - 6 PM</td>
+
+                                </tr>
+                                <tr>
+                                    <td>Saturday - Sunday</td>
+                                    <td>CLosed</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
-                    <div class="msgtext">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message"></textarea>
+                    <!-- location section -->
+                    <div class="location">
+                        <h2>Location</h2>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5435.663113888607!2d-75.75966042755942!3d45.349994696281364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x78382f39c3e19269!2sAlgonquin%20College%20Residence!5e0!3m2!1sen!2sca!4v1606485512547!5m2!1sen!2sca"
+                            width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""
+                            aria-hidden="false" tabindex="0"></iframe>
                     </div>
-                    <button type="submit">Send</button>
-                </form>
 
-                <!-- Adding Table -->
-                <table class="contact-table">
-                    <caption>Hours of operation</caption>
-                    <thead>
-                        <tr>
-                            <th class="background-table" colspan="1">Days</th>
-                            <th class="background-table" rowspan="1">Hours</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Monday - Friday</td>
-                            <td>9 AM - 6 PM</td>
-
-                        </tr>
-                        <tr>
-                            <td>Saturday - Sunday</td>
-                            <td>CLosed</td>
-                        </tr>
-                    </tbody>
-                </table>
-
-                <!-- location section -->
-                <div class="location">
-                    <h2>Location</h2>
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5435.663113888607!2d-75.75966042755942!3d45.349994696281364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x78382f39c3e19269!2sAlgonquin%20College%20Residence!5e0!3m2!1sen!2sca!4v1606485512547!5m2!1sen!2sca"
-                        width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""
-                        aria-hidden="false" tabindex="0"></iframe>
                 </div>
-
             </div>
         </section>
 

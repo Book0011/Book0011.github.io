@@ -481,6 +481,13 @@ table {
     width: 100%;
 }
 
+caption {
+    font-size: 2rem;
+    font-weight: 900;
+    padding-bottom: 20px;
+    text-align: left;
+}
+
 th {
     background-color: #ffe6ac;
 }
@@ -638,8 +645,41 @@ footer a {
         grid-area: one;
     }
 
+/* CONTACT US SECTION DESKTOP */
 
+.contact-us {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 3fr 1fr;
+    grid-gap: 10px;
+    grid-template-areas: 
+    "contact contact"
+    "message location"
+    "hours hours"
+}
 
+.contact-head {
+    grid-area: contact;
+}
 
+.leftcontact {
+    grid-area: message;
+}
+
+.rightcontact {
+    grid-area: location;
+}
+
+.location {
+    grid-area: location;
+}
+
+.rightcontact {
+    grid-area: hours;
+}
+
+.msgtext textarea {
+    height: 200px;
+}
 
 }
