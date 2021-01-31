@@ -652,6 +652,14 @@ h4 {
     color: #56EEF4;
 }
 
+hr {
+    color: #56EEF4;
+    width: 30%;
+    margin: 0;
+    margin-top: 2rem;
+    align-self: left;
+}
+
 /* Footer */
 
 footer p{
