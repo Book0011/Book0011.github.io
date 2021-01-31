@@ -376,6 +376,8 @@ h4 {
     font-size: 1rem;
     color: #FDE8E9;
     line-height: 2rem;
+    align-self: flex-end;
+    padding-right: 15px;
 }
 
 /* Experience Section */
