@@ -170,7 +170,7 @@ a {
 
 nav {
     display: grid;
-    grid-template-columns: 10fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 2fr;
+    grid-template-columns: 8fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 2fr;
     align-items: center;
 }
 
