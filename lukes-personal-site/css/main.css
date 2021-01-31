@@ -155,7 +155,7 @@ head {
 
 span {
     color: #DCE0E7;
-    font-family: digital-7;
+    font-family: orbitron;
     font-size: 1.5rem;
 }
 
@@ -203,7 +203,7 @@ svg {
     grid-column: 2;
     align-self: center;
     font-size: 1.5rem;
-    font-family: digital-7;
+    font-family: orbitron;
     color: #56EEF4;
 
 }
@@ -227,7 +227,7 @@ button {
     border: 2px solid #56EEF4;
     width: auto;
     font-size: 2rem;
-    font-family: digital-7;
+    font-family: orbitron;
     background-color: transparent;
 }
 
@@ -340,7 +340,7 @@ h4 {
     text-align: left;
     color: #56EEF4;
     font-size: 2rem;
-    font-family: digital-7;
+    font-family: orbitron;
 }
 
 
@@ -404,7 +404,7 @@ h4 {
     padding-bottom: 50px;
     font-size: 2rem;
     text-align: center;
-    font-family: digital-7;
+    font-family: orbitron;
     font-weight: 400;
 }
 
@@ -426,7 +426,7 @@ h4 {
     display: inline-block;
     color: #333333;
     font-size: 50px;
-    font-family: digital-7;
+    font-family: orbitron;
     font-weight: 400;
     text-align: center;
     box-sizing: border-box;
@@ -584,7 +584,7 @@ h4 {
     padding-bottom: 50px;
     font-size: 2rem;
     text-align: center;
-    font-family: digital-7;
+    font-family: orbitron;
     font-weight: 400;
 }
 
@@ -616,7 +616,7 @@ h4 {
     padding-bottom: 50px;
     font-size: 2rem;
     text-align: center;
-    font-family: digital-7;
+    font-family: orbitron;
     font-weight: 400;
 }
 
