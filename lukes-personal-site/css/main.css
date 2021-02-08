@@ -156,7 +156,7 @@ head {
 span {
     color: #DCE0E7;
     font-family: orbitron;
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 
 span a:hover {
@@ -176,6 +176,7 @@ nav {
 
 .number {
     text-align: right;
+    padding-left: 25px;
     color: #56EEF4;
 }
 
@@ -242,48 +243,6 @@ a.email:hover {
     color: #56EEF4;
 }
 
-/* Text animation 1 */
-
-/* h4 {
-        grid-row: 3;
-        grid-column: 2;
-        align-self: center;
-        color: #333333;
-        position: relative;
-        font-size: 4rem;
-        -webkit-text-stroke: #333333;
-        font-family: open sans;
-        text-transform: uppercase;
-    }
-
-    h4::before {
-        content: attr(data-text);
-        position: absolute;
-        color: #FDE8E9;
-        top: 0%;
-        left: 0%;
-        width: 0%;
-        height: 100%;
-        border-right: 2px solid #56EEF4;
-        -webkit-text-stroke: .1vw #333333;
-        overflow: hidden;
-        animation: animate 6s linear infinite;
-    }
-
-    @keyframes animate 
-    {
-        0%, 10%, 100%
-        {
-            width: 0%;
-        }
-        50%, 60%, 70%, 80%, 90%
-        {
-            width: 100% ;
-        }
-    } */
-
-/* Text Animation 2 (best)*/
-
 h4 {
     grid-row: 3;
     grid-column: 2;
@@ -329,9 +288,8 @@ h4 {
     padding-top: 50px;
     display: grid;
     grid-template-columns: 5fr .5fr 4.5fr 5fr 5fr;
-    grid-template-rows: 1fr 3fr;
+    grid-template-rows: 1fr 2fr;
 }
-
 
 .about01 {
     grid-row: 1;
@@ -374,9 +332,8 @@ h4 {
     font-weight: 100;
     font-size: 1rem;
     color: #FDE8E9;
-    line-height: 2rem;
     align-self: flex-end;
-    padding-right: 15px;
+    line-height: 1.75rem;
 }
 
 /* Experience Section */
@@ -676,3 +633,177 @@ footer a {
 footer a:hover {
     font-size: 1.1rem;
 }
+
+
+/* SCREENS < 1600 PX */
+
+@media screen and (max-width: 1600px)
+{
+    nav {
+        display: grid;
+        grid-template-columns: 5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 2fr;
+        align-items: center;
+    }
+
+    #about {
+        margin-top: 350px;
+        padding-top: 50px;
+        display: grid;
+        grid-template-columns: 3fr .5fr 4.5fr 5fr 3fr;
+        grid-template-rows: 1fr 2fr;
+    }
+}
+
+@media screen and (max-width: 1200px)
+{
+
+    h4 {
+        grid-row: 3;
+        grid-column: 2;
+        align-self: center;
+        animation: type 6s steps(26) infinite;
+        overflow: hidden;
+        white-space: nowrap;
+        font-family: open sans;
+        color: #fde8e9ce;
+        font-size: 2rem;
+        font-weight: 400;
+        text-transform: uppercase;
+        border-right: 2px solid #56EEF4;
+        width: 26ch;
+    }
+
+    button {
+        margin-top: 15px;
+        grid-row: 5;
+        grid-column: 2;
+        max-width: 50%;
+        border: 2px solid #56EEF4;
+        width: auto;
+        font-size: 2rem;
+        font-family: orbitron;
+        background-color: transparent;
+    }
+
+    nav {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 2fr;
+        align-items: center;
+    }
+
+    #about {
+        margin-top: 350px;
+        padding-top: 50px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: fr 3fr fr;
+    }
+
+    .about01 {
+        grid-row: 1;
+        grid-column: 1 / span2;
+        text-align: center;
+        padding-right: 160px;
+        color: #56EEF4;
+        font-size: 2rem;
+        font-family: orbitron;
+        align-self: center;
+    }
+
+    #about p {
+        padding-top: 50px;
+        padding-left: 20%;
+        padding-right: 20%;
+        grid-row: 3;
+        grid-column: 1 / span2;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 100;
+        font-size: 1rem;
+        color: #FDE8E9;
+        align-self: flex-end;
+        line-height: 1.75rem;
+    }
+    
+    
+    #about h2{
+        padding-left: 80px;
+        grid-row: 1;
+        grid-column: 1 / span2;
+        font-size: 2rem;
+        text-align: center;
+        font-family: open sans;
+        font-weight: 400;
+        color: #FDE8E9;
+        align-self: center;
+    }
+    
+    .image_travel{
+        max-width: 100%;
+        grid-row: 2;
+        grid-column: 1 / span2;
+        max-height: 300px;
+        justify-self: center;
+        align-self: center;
+        box-shadow: 5px 5px  #56EEF4;
+    }
+
+    .image {
+        width: 200px;
+      }
+
+      .overlay {
+        margin: 15px;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 200px;
+        width: 200px;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: #56EEF4;
+      }
+      
+      .overlay {
+        height: 200px;
+        width: 200px;
+      }
+
+      footer p{
+          font-size: .8rem;
+      }
+}
+
+@media screen and (max-width:1050px)
+{
+    .image {
+        width: 150px;
+      }
+
+      .overlay {
+        margin: 15px;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 150px;
+        width: 150px;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: #56EEF4;
+      }
+
+      .text {
+        display: flex;
+        justify-self: center;
+        align-items: center;
+        color: #333333;
+        font-family: open sans;
+        font-size: 1.5rem;
+        text-align: center;
+      }
+
+}
+
