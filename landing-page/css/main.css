@@ -1,0 +1,411 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* ----------------------------
+                CUSTOM STYLES
+    ------------------------------*/
+
+
+
+main {
+    margin: 20px 30px 20px 30px;
+    font-family: montserrat;
+}
+
+/* Making the logo smaller */
+
+.logo {
+    margin: 20px 30px 20px 30px;
+    max-width: 30%;
+    max-height: auto;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    line-height: 125%;
+}
+
+/* giving the signup section a box shadow */
+
+.signup {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    box-shadow: 5px 5px 5px #b5abab;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/* Removing border from input */
+
+input {
+    border-style: none;
+    width: 100%;
+}
+
+/* Removing input styles for the terms and conditions item */
+
+.undo-input {
+    width: auto;
+}
+
+label {
+    font-size: .75rem;
+    color: #a79f9f;
+}
+
+h2 {
+    font-size: 1.75rem;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.signup p {
+    padding-bottom: 10px;
+    font-size: .75rem;
+}
+
+.checkbox {
+    font-size: .75rem;
+    color: black;
+}
+
+/* Form submit button */
+
+h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #57eeab;
+    border-radius: 5px;
+    line-height: 2rem;
+}
+
+a {
+    color: #ff8480;
+    text-decoration: none;
+}
+
+/* adding yellow section */
+
+footer {
+    padding: 20px 30px 20px 30px;
+    background-color: #fffd8c;
+}
+
+h5 {
+    font-size: 1.15rem;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+footer p {
+    padding-bottom: 5px;
+}
+
+.hours {
+    border-radius: 5px;
+    max-width: 25%;
+    height: 20px;
+}
+
+.city {
+    border-radius: 5px;
+    height: 20px;
+    max-width: 50%;
+}
+
+footer h3 {
+    background-color: #ff8480;
+    color: #f7f7ff;
+    font-size: 1.25rem;
+    font-weight: bold;
+    letter-spacing: .15rem;
+}
+
+/* spacing the icons at the bottom of the page */
+
+.icons {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.icons img {
+    padding: 10px;
+}
+
+/* RESPONSIVE FOR TABLET */
+
+@media screen and (min-width: 320px) {
+
+    .logo {
+        max-width: 10%;
+    }
+
+    footer h3 {
+        align-self: center;
+        grid-column: 3;
+        max-width: 150px;
+    }
+
+    /* making the inputs width 100% because it is now in grid display */
+
+    .hours {
+        align-self: center;
+        border-radius: 5px;
+        height: 20px;
+        max-width: 100%;
+        grid-column: 1;
+    }
+
+
+    .city {
+        align-self: center;
+        grid-column: 2;
+        height: 20px;
+        max-width: 100%;
+        border-radius: 5px;
+    }
+
+    /* making the footer section a grid display to better organize items */
+
+    .calculate {
+        grid-gap: 10px;
+        display: grid;
+        grid-template-columns: 1fr 2fr 2fr;
+        grid-template-rows: 1;
+    }
+
+
+}
+
+@media screen and (min-width: 720px) {
+
+    .logo {
+        max-width: 10%;
+    }
+
+    .home {
+        height: 600px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    h1 {
+        grid-row: 1;
+        grid-column: 1;
+        font-size: 5rem;
+    }
+
+    /* makijg the signup width 100% becuase it is now in a grid layout */
+
+    .signup {
+        grid-column: 3;
+        max-width: 100%;
+    }
+
+    .scooter {
+        grid-column: 2;
+        grid-row: 1;
+        width: 100%;
+        height: 100%;
+    }
+
+/* making a grid layout for the footer */
+
+    .yellow {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .icons {
+        align-self: center;
+    }
+
+    .city {
+        max-width: 200px;
+    }
+
+    .hours {
+        max-width: 150px;
+    }
+
+    input {
+        border-style: none;
+        width: 100%;
+    }
+
+    /* form adjustments for desktop */
+
+    label {
+        font-size: 1.5rem;
+        color: #a79f9f;
+    }
+
+    /* increasing padding and font size */
+
+    h2 {
+        font-size: 2rem;
+        padding-bottom: 50px;
+    }
+
+    /* increasing padding and font size */
+
+    .signup p {
+        padding-bottom: 50px;
+        font-size: 1rem;
+    }
+
+    .checkbox {
+        font-size: .75rem;
+        color: black;
+    }
+
+    /* Form submit button */
+
+    h3 {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        line-height: 2rem;
+    }
+
+
+}
