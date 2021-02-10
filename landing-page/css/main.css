@@ -151,7 +151,7 @@ main {
 .logo {
     margin: 20px 30px 20px 30px;
     max-width: 30%;
-    max-height: auto;
+
 }
 
 h1 {
@@ -310,7 +310,7 @@ footer h3 {
         grid-gap: 10px;
         display: grid;
         grid-template-columns: 1fr 2fr 2fr;
-        grid-template-rows: 1;
+        grid-template-rows: 1fr;
     }
 
 
