@@ -1,0 +1,1191 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* ----------------------------
+                CUSTOM STYLES
+    ------------------------------*/
+
+/*-----------------------------------
+             HOME PAGE STYELS
+    ----------------------------------- */
+
+
+
+/* Header Styles */
+
+header {
+    display: grid;
+    background-color: #3C3B3A;
+    grid-template-columns: 1fr;
+    grid-template-rows: 4fr 1fr 1fr 1fr;
+}
+
+.header-img {
+    justify-self: center;
+}
+
+header span {
+    font-family: Raleway;
+    justify-self: center;
+    color: #F2F2F2;
+}
+
+.selected {
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: #F2F2F2;
+}
+
+/* Horizontal Nav Bar Above 720px screen width */
+
+@media screen and (min-width: 720px) {
+
+    header {
+        grid-template-columns: 5fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .header-img {
+        align-self: flex-start;
+        justify-self: start;
+        max-height: 75px;
+        padding-left: 50px;
+    }
+
+    header span {
+        align-self: center;
+    }
+
+}
+
+/* HOME PAGE DISCOVER  */
+
+
+.discover-section {
+    display: grid;
+    padding: 50px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 1fr .75fr .15fr .75fr .15fr 1fr 2fr;
+}
+
+.discover-section p {
+    color: #3C3B3A;
+    line-height: 1.5rem;
+    font-size: 1.2rem;
+    align-self: center;
+}
+
+.discover-section .icon-t {
+    text-align: center;
+    color: #26A682;
+
+}
+
+.sport-icon {
+    max-width: 20%;
+    justify-self: center;
+    align-self: center;
+}
+
+.discover-section h2 {
+    align-self: center;
+    font-size: 3.2rem;
+    color: #3C3B3A;
+    font-weight: bold;
+    grid-column: 1 / span 2;
+    grid-row: 1
+}
+
+
+
+/* Assigning a grid area */
+
+.discover-section .description {
+    grid-column: 1 / span 2;
+    grid-row: 2;
+}
+
+.discover-section .bowling {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.discover-section .bowling-t {
+    grid-column: 1;
+    grid-row: 4;
+}
+
+.discover-section .rock {
+    grid-column: 2;
+    grid-row: 3;
+}
+
+.discover-section .rock-t {
+    grid-column: 2;
+    grid-row: 4
+}
+
+.discover-section .fitness {
+    grid-column: 1;
+    grid-row: 5;
+}
+
+.discover-section .fitness-t {
+    grid-column: 1;
+    grid-row: 6;
+}
+
+.discover-section .indoor {
+    grid-column: 2;
+    grid-row: 5;
+}
+
+.discover-section .indoor-t {
+    grid-column: 2;
+    grid-row: 6;
+}
+
+.discover-section .get-started {
+    grid-column: 1 / span 2;
+    grid-row: 7;
+}
+
+.discover-section .discover {
+    grid-column: 1 / span 2;
+    grid-row: 8;
+}
+
+/* Formatting the get started button */
+
+.get-started {
+    height: 50px;
+    border-radius: 100px;
+    border-color: none;
+    background-color: #26A682;
+    color: white;
+    font-family: raleway;
+    font-size: 2rem;
+    font-weight: bold;
+    box-shadow: 0px 5px 5px #3c3b3a70;
+    justify-self: center;
+    align-self: center;
+    width: 100%;
+}
+
+.discover-2 {
+    margin-bottom: 50px;
+    padding-bottom: 10px;
+}
+
+.discover-2 h3 {
+    font-size: 2.5rem;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 50px;
+    font-family: raleway;
+    font-style: italic;
+    color: #3C3B3A;
+}
+
+.discover-2 h4 {
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 2rem;
+    font-family: raleway;
+    color: #26A682;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.discover-2 p {
+    padding-left: 50px;
+    padding-right: 50px;
+    line-height: 2rem;
+    color: #3C3B3A;
+    padding-bottom: 20px;
+}
+
+.discover {
+    max-width: 100%;
+}
+
+.learn-more {
+    float: right;
+    padding: 15px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    background-color: #26A682;
+    border-radius: 100px;
+    color: #F2F2F2;
+    font-family: raleway;
+    box-shadow: 0px 5px 5px #3c3b3a83;
+}
+
+/* MEET SIMON  */
+
+.team {
+    padding: 50px;
+    background-color: #3C3B3A;
+}
+
+.simon {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    max-width: 60%;
+    border-radius: 50%;
+}
+
+.team h3 {
+    font-size: 2rem;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font: bold;
+    font-family: raleway;
+    color: #F2F2F2;
+    text-align: center;
+}
+
+.team p {
+    font-family: raleway;
+    color: #F2F2F2;
+    line-height: 2rem;
+}
+
+
+/* Entertainment Section */
+
+.discover-3 {
+    margin-bottom: 50px;
+    padding-bottom: 10px;
+}
+
+.discover-3 h3 {
+    font-size: 2.5rem;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 50px;
+    font-family: raleway;
+    font-style: italic;
+    color: #3C3B3A;
+}
+
+.discover-3 h4 {
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 2rem;
+    font-family: raleway;
+    color: #26A682;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.discover-3 p {
+    padding-left: 50px;
+    padding-right: 50px;
+    line-height: 2rem;
+    color: #3C3B3A;
+    padding-bottom: 20px;
+}
+
+
+
+.school {
+    max-width: 100%;
+}
+
+
+
+.entertainment {
+    max-width: 100%;
+}
+
+
+
+
+
+.services-image {
+    max-width: 100%;
+}
+
+
+
+@media screen and (max-width: 720px) {
+
+    .image-hidden {
+        display: none;
+    }
+
+}
+
+
+/* TABLET */
+
+@media screen and (min-width: 720px) {
+
+    /* Making the icons all in one row */
+    .discover-section {
+        display: grid;
+        padding: 50px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: .5fr .25fr .75fr .15fr 1fr 2fr;
+    }
+    
+    .discover-section h2 {
+        align-self: center;
+        font-size: 3.2rem;
+        color: #3C3B3A;
+        font-weight: bold;
+        grid-column: 1 / span 4;
+        grid-row: 1
+    }
+    
+    
+    
+    /* Assigning a grid area */
+    
+    .discover-section .description {
+        grid-column: 1 / span 4;
+        grid-row: 2;
+    }
+    
+    .discover-section .bowling {
+        grid-column: 1;
+        grid-row: 3;
+    }
+    
+    .discover-section .bowling-t {
+        grid-column: 1;
+        grid-row: 4;
+    }
+    
+    .discover-section .rock {
+        grid-column: 2;
+        grid-row: 3;
+    }
+    
+    .discover-section .rock-t {
+        grid-column: 2;
+        grid-row: 4
+    }
+    
+    .discover-section .fitness {
+        grid-column: 3;
+        grid-row: 3;
+    }
+    
+    .discover-section .fitness-t {
+        grid-column: 3;
+        grid-row: 4;
+    }
+    
+    .discover-section .indoor {
+        grid-column: 4;
+        grid-row: 3;
+    }
+    
+    .discover-section .indoor-t {
+        grid-column: 4;
+        grid-row: 4;
+    }
+    
+    .discover-section .get-started {
+        grid-column: 2 / span 2;
+        grid-row: 5;
+    }
+    
+    .discover-section .discover {
+        grid-column: 2 / span 2;
+        grid-row: 6;
+    }
+
+    /* SIMON */
+
+    .team {
+        display: grid;
+        width: 100%;
+        padding: 0%;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 2fr 1fr;
+    }
+
+    .team img {
+        justify-self: center;
+        align-self: center;
+        padding: 15px;
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .team h3 {
+        justify-self: center;
+        align-self: center;
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .team p {
+        justify-self: center;
+        align-self: center;
+        grid-column: 2;
+        grid-row: 1 / span 2;
+    }
+
+
+    /* changing width of the banner photos */
+
+    .banner-p {
+        width:100%;
+        height:350px;
+         overflow:hidden;
+    }
+
+    .school {
+        width: 100%;
+    }
+
+}
+
+
+/* DESKTOP */
+
+@media screen and (min-width: 1200px) {
+
+    .discover-2 {
+        max-height: 500px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 3fr 1fr;
+    }
+
+    .banner-p {
+        padding-left: 50px;
+        grid-gap: 50px;
+        width:90%;
+    }
+
+    .discover-2 .banner-p {
+        height: 500px;
+        grid-column: 1;
+        grid-row: 1 / span 4;
+    }
+
+    .discover-2 h3 {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .discover-2 h4 {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    .discover-2 p {
+        grid-column: 2;
+        grid-row: 3;
+    }
+
+    .discover-2 button {
+        grid-column: 2;
+        grid-row: 4;
+    }
+
+/* SECOND BANNER SECTION */
+
+    .discover-3 {
+        max-height: 500px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 3fr 1fr;
+    }
+
+    .banner-p {
+        padding-left: 50px;
+        grid-gap: 50px;
+        width:90%;
+    }
+
+    .discover-3 .banner-p {
+        height: 500px;
+        padding-top: 50px;
+        grid-column: 2;
+        grid-row: 1 / span 4;
+    }
+
+    .discover-3 h3 {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .discover-3 h4 {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .discover-3 p {
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    .discover-3 button {
+        grid-column: 1;
+        grid-row: 4;
+    }
+
+
+    /* SIMON SECTION */
+
+    .team {
+        display: grid;
+        grid-template-columns: 1fr 1fr 4fr;
+        grid-template-rows: 1fr;
+    }
+
+    .team img {
+        justify-self: center;
+        align-self: center;
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .team h3{
+        justify-self: center;
+        align-self: center;
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .team p {
+        padding: 50px;
+        justify-self: center;
+        align-self: center;
+        grid-column: 3;
+        grid-row: 1;
+    }
+ 
+}
+
+/* -------------------
+         ABOUT PAGE 
+    ----------------*/
+
+    .about h2 {
+        font-weight: bold;
+        padding: 50px;
+        font-family: raleway;
+        font-size: 2.2rem;
+        color: #3C3B3A;
+    }
+
+    .about p {
+        padding-left: 50px;
+        padding-right: 50px;
+        color: #3C3B3A;
+        line-height: 2rem;
+        color: #3C3B3A;
+    }
+
+    .about img {
+        max-width: 100%;
+    }
+
+    .about-image {
+        max-width: 100%;
+    }
+
+    /* Q and A section */
+
+    .qa {
+        padding: 50px;
+    }
+
+    .qa h3 {
+        font-family: raleway;
+        font-weight: bold;
+        font-style: italic;
+        color: #3C3B3A;
+        font-size: 2.2rem;
+    }
+
+    .qa p {
+        color: #3C3B3A;
+        line-height: 2rem;
+        color: #3C3B3A;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+
+    /* INFO SECTION */
+
+    .info {
+        padding: 50px;
+    }
+
+    .info h3 {
+        font-family: raleway;
+        font-weight: bold;
+        font-style: italic;
+        color: #3C3B3A;
+        font-size: 2.2rem;
+    }
+
+    .info p {
+        color: #3C3B3A;
+        line-height: 2rem;
+        color: #3C3B3A;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .info h4 {
+        font-size: 1.5rem;
+        color: #26A682;
+        font-family: raleway;
+        padding-top: 20px;
+    }
+
+    /* Call to action section */
+
+    .cta {
+        padding: 20px;
+        background-color: #3C3B3A;
+        color: #F2F2F2;
+        font-family: raleway;
+    }
+
+    .cta h5 {
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    .cta button {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        height: 50px;
+        border-radius: 100px;
+        background-color: #26A682;
+        color: white;
+        font-family: raleway;
+        font-size: 1.5rem;
+        font-weight: bold;
+        box-shadow: 0px 5px 5px #3c3b3a70;
+        width: 50%;
+        margin-top: 15px;
+    }
+
+
+    .info2 {
+        padding: 50px;
+    }
+
+    .info2 h3 {
+        font-family: raleway;
+        font-weight: bold;
+        font-style: italic;
+        color: #3C3B3A;
+        font-size: 2.2rem;
+    }
+
+    .info2 p {
+        color: #3C3B3A;
+        line-height: 2rem;
+        color: #3C3B3A;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .info2 h4 {
+        font-size: 1.5rem;
+        color: #26A682;
+        font-family: raleway;
+        padding-top: 20px;
+    }
+
+    /* Thank You Section */
+
+    .thanks {
+        display: grid;
+        padding-left: 50px;
+        padding-bottom: 50px;
+    }
+
+    .thanks h3 {
+        text-align: center;
+        font-family: raleway;
+        font-size: 2.2rem;
+        color: #3C3B3A;
+        font-weight: bold;
+        font-style: normal;
+        padding-bottom: 20px;
+    }
+
+    .thanks img {
+        justify-self: center;
+        align-self: center;
+        max-width: 25%;
+        padding-top: 50px;
+    }
+
+/* TABLET */
+
+@media screen and (min-width: 720px){
+
+    .banner-p {
+        padding: 0;
+        width:100%;
+        height:250px;
+        overflow:hidden;
+    }
+
+    .service-image {
+        width: 100%;
+    }
+
+/* NEED A BREAK ADDING IMAGES */
+
+    .break {
+        display: grid;
+        grid-gap: 15px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: .5fr .5fr 5fr;
+    }
+
+    .break h3{
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .break h4{
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    .break p {
+        align-self: center;
+        grid-column: 2;
+        grid-row: 3;
+    }
+
+    .break img{
+        grid-column: 1;
+        grid-row: 1 / span 3;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    /* COMPETETIVE FRIENDS ADDING IMAGE */
+
+    .friends {
+        padding-top: 50px;
+        display: grid;
+        grid-gap: 15px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: .5fr .5fr 5fr;
+    }
+
+    .friends h3{
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .friends h4{
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .friends p {
+        align-self: center;
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    .friends img{
+        grid-row: 1 / span 3;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+/* CALL TO ACTION  */
+
+    .cta {
+        display: grid;
+        grid-template-columns: 2;
+    }
+
+    .cta h5 {
+        justify-self: center;
+        align-self: center;
+        grid-column: 1;
+    }
+    
+    .cta button {
+        align-self: center;
+        justify-self: center;
+        grid-column: 2;
+    }
+
+    /* NEW YEAR NEW ME SECTION */
+
+    .newyear {
+        padding-top: 50px;
+        display: grid;
+        grid-gap: 15px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: .5fr .5fr 5fr;
+    }
+
+    .newyear h3{
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .newyear h4{
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    .newyear p {
+        align-self: center;
+        grid-column: 2;
+        grid-row: 3;
+    }
+
+    .newyear img{
+        grid-column: 1;
+        grid-row: 1 / span 3;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .indoorclimb {
+        padding-top: 50px;
+        display: grid;
+        grid-gap: 15px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: .5fr .5fr 5fr;
+    }
+
+    .indoorclimb h3{
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .indoorclimb h4{
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .indoorclimb p {
+        align-self: center;
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    .indoorclimb img{
+        grid-column: 2;
+        grid-row: 1 / span 3;
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+
+
+/* DESKTOP */
+
+@media screen and (min-width: 1200px) {
+
+/* MAIN SECTION MAKING INTO GRID */
+
+    .about {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 2fr;
+    }
+
+    .about h2 {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .about p {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .about img {
+        grid-column: 2;
+        grid-row: 1 / span 2;
+    }
+
+    /* MAKING THREE QUESTIONS INTO # COLUMNS */
+
+    .qa {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 3fr;
+    }
+
+    .qa .who{
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .qa .who-t {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .qa .what {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .qa .what-t {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    .qa .where {
+        grid-column: 3;
+        grid-row: 1;
+    }
+
+    .qa .where-t {
+        grid-column: 3;
+        grid-row: 2;
+    }
+
+    /* PARTENRS SECTION INTO COLUMS */
+
+    .thanks {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .thanks h3 {
+        grid-column: 1 / span 4;
+        grid-row: 1;
+        justify-self: center;
+        align-self: center;
+    }
+
+    .thanks .partners {
+        max-width: 50%;
+    }
+}
+
+
+/* --------------------
+ CONTACT PAGE
+ */
+
+
+
+
+/* --------------------
+        FOOTER       
+   -------------------*/
+
+   footer {
+       display: grid;
+       grid-template-columns: 3fr 1fr 1fr 1fr 1fr 3fr;
+       grid-template-rows: 1fr 1fr;
+       padding: 20px 0px 0px 0px;
+       width: 100%;
+       background-color: #3C3B3A;
+   }
+
+   .social-icon {
+    justify-self: center;
+    max-width: 25%;
+    color: black;
+}
+
+   footer h3 {
+       font-size: 2rem;
+       grid-column: 2 / span 4;
+       grid-row: 1;
+       color: #F2F2F2;
+       text-align: center;
+   }
+
+   footer .fb {
+       grid-column: 2;
+       grid-row: 2;
+   }
+
+   footer .insta {
+       grid-column: 3;
+       grid-row: 2;
+   }
+
+   footer .twitter {
+       grid-column: 4;
+       grid-row: 2;
+   }
+
+   footer .youtube {
+       grid-column: 5;
+       grid-row: 2;
+       }
+
+       footer .arrow {
+           justify-self: flex-end;
+           padding-right: 20px;
+           grid-column: 6;
+           grid-row: 1;
+       }
+
+       footer p {
+           grid-column: 6;
+           grid-row: 2;
+           color: #F2F2F2;
+           font-family: raleway;
+           text-align: right;
+           padding-right: 20px;
+           padding-top: 10px;
+           font-size: .75rem
+           ;
+       }
