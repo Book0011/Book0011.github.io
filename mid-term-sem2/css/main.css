@@ -468,7 +468,7 @@ a {
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: .5fr .25fr .75fr .15fr 1fr 2fr;
     }
-    
+
     .discover-section h2 {
         align-self: center;
         font-size: 3.2rem;
@@ -477,61 +477,61 @@ a {
         grid-column: 1 / span 4;
         grid-row: 1
     }
-    
-    
-    
+
+
+
     /* Assigning a grid area */
-    
+
     .discover-section .description {
         grid-column: 1 / span 4;
         grid-row: 2;
     }
-    
+
     .discover-section .bowling {
         grid-column: 1;
         grid-row: 3;
     }
-    
+
     .discover-section .bowling-t {
         grid-column: 1;
         grid-row: 4;
     }
-    
+
     .discover-section .rock {
         grid-column: 2;
         grid-row: 3;
     }
-    
+
     .discover-section .rock-t {
         grid-column: 2;
         grid-row: 4
     }
-    
+
     .discover-section .fitness {
         grid-column: 3;
         grid-row: 3;
     }
-    
+
     .discover-section .fitness-t {
         grid-column: 3;
         grid-row: 4;
     }
-    
+
     .discover-section .indoor {
         grid-column: 4;
         grid-row: 3;
     }
-    
+
     .discover-section .indoor-t {
         grid-column: 4;
         grid-row: 4;
     }
-    
+
     .discover-section .get-started {
         grid-column: 2 / span 2;
         grid-row: 5;
     }
-    
+
     .discover-section .discover {
         grid-column: 2 / span 2;
         grid-row: 6;
@@ -573,9 +573,9 @@ a {
     /* changing width of the banner photos */
 
     .banner-p {
-        width:100%;
-        height:350px;
-         overflow:hidden;
+        width: 100%;
+        height: 350px;
+        overflow: hidden;
     }
 
     .school {
@@ -595,9 +595,9 @@ a {
         display: grid;
         padding: 50px;
         grid-template-columns: 1fr 1fr 1fr 1fr 4fr;
-        grid-template-rows: .5fr .25fr .75fr .15fr 1fr ;
+        grid-template-rows: .5fr .25fr .75fr .15fr 1fr;
     }
-    
+
     .discover-section h2 {
         align-self: center;
         font-size: 3.2rem;
@@ -606,63 +606,63 @@ a {
         grid-column: 1 / span 4;
         grid-row: 1
     }
-    
-    
-    
+
+
+
     /* Assigning a grid area */
-    
+
     .discover-section .description {
         grid-column: 1 / span 4;
         grid-row: 2;
     }
-    
+
     .discover-section .bowling {
         grid-column: 1;
         grid-row: 3;
     }
-    
+
     .discover-section .bowling-t {
         grid-column: 1;
         grid-row: 4;
     }
-    
+
     .discover-section .rock {
         grid-column: 2;
         grid-row: 3;
     }
-    
+
     .discover-section .rock-t {
         grid-column: 2;
         grid-row: 4
     }
-    
+
     .discover-section .fitness {
         grid-column: 3;
         grid-row: 3;
     }
-    
+
     .discover-section .fitness-t {
         grid-column: 3;
         grid-row: 4;
     }
-    
+
     .discover-section .indoor {
         grid-column: 4;
         grid-row: 3;
     }
-    
+
     .discover-section .indoor-t {
         grid-column: 4;
         grid-row: 4;
     }
-    
+
     .discover-section .get-started {
         grid-column: 2 / span 2;
         grid-row: 5;
     }
-    
+
     .discover-section .discover {
-        grid-column: 5 ;
+        grid-column: 5;
         grid-row: 1 / span 5;
     }
 
@@ -671,13 +671,13 @@ a {
         max-height: 500px;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 3fr 1fr ;
+        grid-template-rows: 1fr 1fr 3fr 1fr;
     }
 
     .banner-p {
         padding-left: 50px;
         grid-gap: 50px;
-        width:90%;
+        width: 90%;
     }
 
     .discover-2 .banner-p {
@@ -706,7 +706,7 @@ a {
         grid-row: 4;
     }
 
-/* SECOND BANNER SECTION */
+    /* SECOND BANNER SECTION */
 
     .discover-3 {
         max-height: 500px;
@@ -718,7 +718,7 @@ a {
     .banner-p {
         padding-left: 50px;
         grid-gap: 50px;
-        width:90%;
+        width: 90%;
     }
 
     .discover-3 .banner-p {
@@ -764,7 +764,7 @@ a {
         grid-row: 1;
     }
 
-    .team h3{
+    .team h3 {
         justify-self: center;
         align-self: center;
         grid-column: 2;
@@ -778,188 +778,188 @@ a {
         grid-column: 3;
         grid-row: 1;
     }
- 
+
 }
 
 /* -------------------
          ABOUT PAGE 
     ----------------*/
 
-    .about h2 {
-        font-weight: bold;
-        padding: 50px;
-        font-family: raleway;
-        font-size: 2.2rem;
-        color: #3C3B3A;
-    }
+.about h2 {
+    font-weight: bold;
+    padding: 50px;
+    font-family: raleway;
+    font-size: 2.2rem;
+    color: #3C3B3A;
+}
 
-    .about p {
-        padding-left: 50px;
-        padding-right: 50px;
-        color: #3C3B3A;
-        line-height: 2rem;
-        color: #3C3B3A;
-    }
+.about p {
+    padding-left: 50px;
+    padding-right: 50px;
+    color: #3C3B3A;
+    line-height: 2rem;
+    color: #3C3B3A;
+}
 
-    .about img {
-        max-width: 100%;
-    }
+.about img {
+    max-width: 100%;
+}
 
-    .about-image {
-        max-width: 100%;
-    }
+.about-image {
+    max-width: 100%;
+}
 
-    /* Q and A section */
+/* Q and A section */
 
-    .qa {
-        padding: 50px;
-    }
+.qa {
+    padding: 50px;
+}
 
-    .qa h3 {
-        font-family: raleway;
-        font-weight: bold;
-        font-style: italic;
-        color: #3C3B3A;
-        font-size: 2.2rem;
-    }
+.qa h3 {
+    font-family: raleway;
+    font-weight: bold;
+    font-style: italic;
+    color: #3C3B3A;
+    font-size: 2.2rem;
+}
 
-    .qa p {
-        color: #3C3B3A;
-        line-height: 2rem;
-        color: #3C3B3A;
-        padding-top: 20px;
-        padding-bottom: 20px;
-    }
-
-
-    /* INFO SECTION */
-
-    .info {
-        padding: 50px;
-    }
-
-    .info h3 {
-        font-family: raleway;
-        font-weight: bold;
-        font-style: italic;
-        color: #3C3B3A;
-        font-size: 2.2rem;
-    }
-
-    .info p {
-        color: #3C3B3A;
-        line-height: 2rem;
-        color: #3C3B3A;
-        padding-top: 20px;
-        padding-bottom: 20px;
-    }
-
-    .info h4 {
-        font-size: 1.5rem;
-        color: #26A682;
-        font-family: raleway;
-        padding-top: 20px;
-    }
-
-    /* Call to action section */
-
-    .cta {
-        padding: 20px;
-        background-color: #3C3B3A;
-        color: #F2F2F2;
-        font-family: raleway;
-    }
-
-    .cta h5 {
-        text-align: center;
-        font-size: 1.5rem;
-    }
-
-    .cta button {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        height: 50px;
-        border-radius: 100px;
-        background-color: #26A682;
-        color: white;
-        font-family: raleway;
-        font-size: 1.5rem;
-        font-weight: bold;
-        box-shadow: 0px 5px 5px #3c3b3a70;
-        width: 50%;
-        margin-top: 15px;
-    }
+.qa p {
+    color: #3C3B3A;
+    line-height: 2rem;
+    color: #3C3B3A;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
 
 
-    .info2 {
-        padding: 50px;
-    }
+/* INFO SECTION */
 
-    .info2 h3 {
-        font-family: raleway;
-        font-weight: bold;
-        font-style: italic;
-        color: #3C3B3A;
-        font-size: 2.2rem;
-    }
+.info {
+    padding: 50px;
+}
 
-    .info2 p {
-        color: #3C3B3A;
-        line-height: 2rem;
-        color: #3C3B3A;
-        padding-top: 20px;
-        padding-bottom: 20px;
-    }
+.info h3 {
+    font-family: raleway;
+    font-weight: bold;
+    font-style: italic;
+    color: #3C3B3A;
+    font-size: 2.2rem;
+}
 
-    .info2 h4 {
-        font-size: 1.5rem;
-        color: #26A682;
-        font-family: raleway;
-        padding-top: 20px;
-    }
+.info p {
+    color: #3C3B3A;
+    line-height: 2rem;
+    color: #3C3B3A;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
 
-    /* Thank You Section */
+.info h4 {
+    font-size: 1.5rem;
+    color: #26A682;
+    font-family: raleway;
+    padding-top: 20px;
+}
 
-    .thanks {
-        display: grid;
-        padding-left: 50px;
-        padding-bottom: 50px;
-    }
+/* Call to action section */
 
-    .thanks h3 {
-        text-align: center;
-        font-family: raleway;
-        font-size: 2.2rem;
-        color: #3C3B3A;
-        font-weight: bold;
-        font-style: normal;
-        padding-bottom: 20px;
-    }
+.cta {
+    padding: 20px;
+    background-color: #3C3B3A;
+    color: #F2F2F2;
+    font-family: raleway;
+}
 
-    .thanks img {
-        justify-self: center;
-        align-self: center;
-        max-width: 25%;
-        padding-top: 50px;
-    }
+.cta h5 {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.cta button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 50px;
+    border-radius: 100px;
+    background-color: #26A682;
+    color: white;
+    font-family: raleway;
+    font-size: 1.5rem;
+    font-weight: bold;
+    box-shadow: 0px 5px 5px #3c3b3a70;
+    width: 50%;
+    margin-top: 15px;
+}
+
+
+.info2 {
+    padding: 50px;
+}
+
+.info2 h3 {
+    font-family: raleway;
+    font-weight: bold;
+    font-style: italic;
+    color: #3C3B3A;
+    font-size: 2.2rem;
+}
+
+.info2 p {
+    color: #3C3B3A;
+    line-height: 2rem;
+    color: #3C3B3A;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.info2 h4 {
+    font-size: 1.5rem;
+    color: #26A682;
+    font-family: raleway;
+    padding-top: 20px;
+}
+
+/* Thank You Section */
+
+.thanks {
+    display: grid;
+    padding-left: 50px;
+    padding-bottom: 50px;
+}
+
+.thanks h3 {
+    text-align: center;
+    font-family: raleway;
+    font-size: 2.2rem;
+    color: #3C3B3A;
+    font-weight: bold;
+    font-style: normal;
+    padding-bottom: 20px;
+}
+
+.thanks img {
+    justify-self: center;
+    align-self: center;
+    max-width: 25%;
+    padding-top: 50px;
+}
 
 /* TABLET */
 
-@media screen and (min-width: 720px){
+@media screen and (min-width: 720px) {
 
     .banner-p {
         padding: 0;
-        width:100%;
-        height:250px;
-        overflow:hidden;
+        width: 100%;
+        height: 250px;
+        overflow: hidden;
     }
 
     .service-image {
         width: 100%;
     }
 
-/* NEED A BREAK ADDING IMAGES */
+    /* NEED A BREAK ADDING IMAGES */
 
     .break {
         display: grid;
@@ -968,12 +968,12 @@ a {
         grid-template-rows: .5fr .5fr 5fr;
     }
 
-    .break h3{
+    .break h3 {
         grid-column: 2;
         grid-row: 1;
     }
 
-    .break h4{
+    .break h4 {
         grid-column: 2;
         grid-row: 2;
     }
@@ -984,7 +984,7 @@ a {
         grid-row: 3;
     }
 
-    .break img{
+    .break img {
         grid-column: 1;
         grid-row: 1 / span 3;
         max-width: 100%;
@@ -1001,12 +1001,12 @@ a {
         grid-template-rows: .5fr .5fr 5fr;
     }
 
-    .friends h3{
+    .friends h3 {
         grid-column: 1;
         grid-row: 1;
     }
 
-    .friends h4{
+    .friends h4 {
         grid-column: 1;
         grid-row: 2;
     }
@@ -1017,13 +1017,13 @@ a {
         grid-row: 3;
     }
 
-    .friends img{
+    .friends img {
         grid-row: 1 / span 3;
         max-width: 100%;
         max-height: 100%;
     }
 
-/* CALL TO ACTION  */
+    /* CALL TO ACTION  */
 
     .cta {
         display: grid;
@@ -1035,7 +1035,7 @@ a {
         align-self: center;
         grid-column: 1;
     }
-    
+
     .cta button {
         align-self: center;
         justify-self: center;
@@ -1052,12 +1052,12 @@ a {
         grid-template-rows: .5fr .5fr 5fr;
     }
 
-    .newyear h3{
+    .newyear h3 {
         grid-column: 2;
         grid-row: 1;
     }
 
-    .newyear h4{
+    .newyear h4 {
         grid-column: 2;
         grid-row: 2;
     }
@@ -1068,7 +1068,7 @@ a {
         grid-row: 3;
     }
 
-    .newyear img{
+    .newyear img {
         grid-column: 1;
         grid-row: 1 / span 3;
         max-width: 100%;
@@ -1083,12 +1083,12 @@ a {
         grid-template-rows: .5fr .5fr 5fr;
     }
 
-    .indoorclimb h3{
+    .indoorclimb h3 {
         grid-column: 1;
         grid-row: 1;
     }
 
-    .indoorclimb h4{
+    .indoorclimb h4 {
         grid-column: 1;
         grid-row: 2;
     }
@@ -1099,7 +1099,7 @@ a {
         grid-row: 3;
     }
 
-    .indoorclimb img{
+    .indoorclimb img {
         grid-column: 2;
         grid-row: 1 / span 3;
         max-width: 100%;
@@ -1112,7 +1112,7 @@ a {
 
 @media screen and (min-width: 1200px) {
 
-/* MAIN SECTION MAKING INTO GRID */
+    /* MAIN SECTION MAKING INTO GRID */
 
     .about {
         display: grid;
@@ -1143,7 +1143,7 @@ a {
         grid-template-rows: 1fr 3fr;
     }
 
-    .qa .who{
+    .qa .who {
         grid-column: 1;
         grid-row: 1;
     }
@@ -1198,55 +1198,55 @@ a {
  CONTACT PAGE
  */
 
- #contact {
-     padding: 50px;
- }
+#contact {
+    padding: 50px;
+}
 
- #contact h2 {
-     font-size: 3.2rem;
-     font-family: raleway;
-     font-weight: bold;
-     color: #3C3B3A;
-     text-align: center;
- }
+#contact h2 {
+    font-size: 3.2rem;
+    font-family: raleway;
+    font-weight: bold;
+    color: #3C3B3A;
+    text-align: center;
+}
 
- #contact p {
-     font-family: raleway;
-     padding-top: 15px ;
-     line-height: 1.5rem;
- }
+#contact p {
+    font-family: raleway;
+    padding-top: 15px;
+    line-height: 1.5rem;
+}
 
- #contact img {
-     max-width: 100%;
- }
+#contact img {
+    max-width: 100%;
+}
 
- #contact form {
-     border-radius: 20px;
-     background-color: #26A682;
- }
+#contact form {
+    border-radius: 20px;
+    background-color: #26A682;
+}
 
 form {
     padding: 15px;
     margin-bottom: 20px;
 }
 
- form h3 {
-     font-size: 2rem;
-     font-family: raleway;
-     color: #F2F2F2;
-     padding-bottom: 15px;
-     text-align: center;
-     font-weight: bold;
- }
+form h3 {
+    font-size: 2rem;
+    font-family: raleway;
+    color: #F2F2F2;
+    padding-bottom: 15px;
+    text-align: center;
+    font-weight: bold;
+}
 
- form input {
-     border-radius: 10px;
-     margin: 15px;
-     padding: 0;
-     width: 95%;
-     border-style: none;
-     padding: 10px;
- }
+form input {
+    border-radius: 10px;
+    margin: 15px;
+    padding: 0;
+    width: 95%;
+    border-style: none;
+    padding: 10px;
+}
 
 form label {
     color: #F2F2F2;
@@ -1271,7 +1271,7 @@ form button {
 
 iframe {
     padding-top: 10px;
-} 
+}
 
 
 /* DESKTOP */
@@ -1279,48 +1279,52 @@ iframe {
 @media screen and (min-width: 1200px) {
     #contact {
         display: grid;
+        grid-gap: 15px;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 0 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 2fr  1fr 1fr 1fr;
     }
 
-    #contact h2 .top{
-text-align: left;
+    #contact h2 .top {
+        text-align: left;
         grid-column: 1;
         grid-row: 1;
     }
 
-    #contact p .top{
+    #contact p .top {
         grid-column: 1;
         grid-row: 2;
     }
 
-    #contact img{
-        max-width: 500px;
+    #contact img {
+        justify-self: center;
+        align-self: center;
+        max-width: 400px;
         grid-column: 1;
         grid-row: 3;
     }
 
-    #contact h4{
+    #contact h4 {
         grid-column: 1;
-        grid-row:5;
+        grid-row: 5;
     }
 
-    #contact h2 .bottom{
+    #contact h2 .bottom {
         grid-column: 1;
         grid-row: 4;
     }
 
-    #contact p .bottom{
+    #contact p .bottom {
         grid-column: 1;
         grid-row: 6;
     }
 
-    #contact form{
+    #contact form {
+        max-height: 450px;
         grid-column: 2;
-        grid-row:  1 / span 3;
+        grid-row: 1 / span 3;
     }
 
-    #contact iframe{
+    #contact iframe {
         grid-column: 2;
         grid-row: 4 / span 3;
     }
@@ -1333,64 +1337,63 @@ text-align: left;
         FOOTER       
    -------------------*/
 
-   footer {
-       display: grid;
-       grid-template-columns: 3fr 1fr 1fr 1fr 1fr 3fr;
-       grid-template-rows: 1fr 1fr;
-       padding: 20px 0px 0px 0px;
-       width: 100%;
-       background-color: #3C3B3A;
-   }
+footer {
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr 1fr 1fr 3fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 20px 0px 0px 0px;
+    width: 100%;
+    background-color: #3C3B3A;
+}
 
-   .social-icon {
+.social-icon {
     justify-self: center;
     max-width: 25%;
     color: black;
 }
 
-   footer h3 {
-       font-size: 2rem;
-       grid-column: 2 / span 4;
-       grid-row: 1;
-       color: #F2F2F2;
-       text-align: center;
-   }
+footer h3 {
+    font-size: 2rem;
+    grid-column: 2 / span 4;
+    grid-row: 1;
+    color: #F2F2F2;
+    text-align: center;
+}
 
-   footer .fb {
-       grid-column: 2;
-       grid-row: 2;
-   }
+footer .fb {
+    grid-column: 2;
+    grid-row: 2;
+}
 
-   footer .insta {
-       grid-column: 3;
-       grid-row: 2;
-   }
+footer .insta {
+    grid-column: 3;
+    grid-row: 2;
+}
 
-   footer .twitter {
-       grid-column: 4;
-       grid-row: 2;
-   }
+footer .twitter {
+    grid-column: 4;
+    grid-row: 2;
+}
 
-   footer .youtube {
-       grid-column: 5;
-       grid-row: 2;
-       }
+footer .youtube {
+    grid-column: 5;
+    grid-row: 2;
+}
 
-       footer .arrow {
-           justify-self: flex-end;
-           padding-right: 20px;
-           grid-column: 6;
-           grid-row: 1;
-       }
+footer .arrow {
+    justify-self: flex-end;
+    padding-right: 20px;
+    grid-column: 6;
+    grid-row: 1;
+}
 
-       footer p {
-           grid-column: 6;
-           grid-row: 2;
-           color: #F2F2F2;
-           font-family: raleway;
-           text-align: right;
-           padding-right: 20px;
-           padding-top: 10px;
-           font-size: .75rem
-           ;
-       }
+footer p {
+    grid-column: 6;
+    grid-row: 2;
+    color: #F2F2F2;
+    font-family: raleway;
+    text-align: right;
+    padding-right: 20px;
+    padding-top: 10px;
+    font-size: .75rem;
+}
