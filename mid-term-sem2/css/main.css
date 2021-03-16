@@ -297,7 +297,6 @@ a {
 .get-started {
     height: 50px;
     border-radius: 100px;
-    border-color: none;
     background-color: #26A682;
     color: white;
     font-family: raleway;
@@ -590,11 +589,89 @@ a {
 
 @media screen and (min-width: 1200px) {
 
+    /* DISCOVER SECTION */
+
+    .discover-section {
+        display: grid;
+        padding: 50px;
+        grid-template-columns: 1fr 1fr 1fr 1fr 4fr;
+        grid-template-rows: .5fr .25fr .75fr .15fr 1fr ;
+    }
+    
+    .discover-section h2 {
+        align-self: center;
+        font-size: 3.2rem;
+        color: #3C3B3A;
+        font-weight: bold;
+        grid-column: 1 / span 4;
+        grid-row: 1
+    }
+    
+    
+    
+    /* Assigning a grid area */
+    
+    .discover-section .description {
+        grid-column: 1 / span 4;
+        grid-row: 2;
+    }
+    
+    .discover-section .bowling {
+        grid-column: 1;
+        grid-row: 3;
+    }
+    
+    .discover-section .bowling-t {
+        grid-column: 1;
+        grid-row: 4;
+    }
+    
+    .discover-section .rock {
+        grid-column: 2;
+        grid-row: 3;
+    }
+    
+    .discover-section .rock-t {
+        grid-column: 2;
+        grid-row: 4
+    }
+    
+    .discover-section .fitness {
+        grid-column: 3;
+        grid-row: 3;
+    }
+    
+    .discover-section .fitness-t {
+        grid-column: 3;
+        grid-row: 4;
+    }
+    
+    .discover-section .indoor {
+        grid-column: 4;
+        grid-row: 3;
+    }
+    
+    .discover-section .indoor-t {
+        grid-column: 4;
+        grid-row: 4;
+    }
+    
+    .discover-section .get-started {
+        grid-column: 2 / span 2;
+        grid-row: 5;
+    }
+    
+    .discover-section .discover {
+        grid-column: 5 ;
+        grid-row: 1 / span 5;
+    }
+
+    /* DISCOVER AQ SECTION */
     .discover-2 {
         max-height: 500px;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 3fr 1fr;
+        grid-template-rows: 1fr 1fr 3fr 1fr ;
     }
 
     .banner-p {
@@ -950,7 +1027,7 @@ a {
 
     .cta {
         display: grid;
-        grid-template-columns: 2;
+        grid-template-columns: 1fr 1fr;
     }
 
     .cta h5 {
@@ -1121,6 +1198,134 @@ a {
  CONTACT PAGE
  */
 
+ #contact {
+     padding: 50px;
+ }
+
+ #contact h2 {
+     font-size: 3.2rem;
+     font-family: raleway;
+     font-weight: bold;
+     color: #3C3B3A;
+     text-align: center;
+ }
+
+ #contact p {
+     font-family: raleway;
+     padding-top: 15px ;
+     line-height: 1.5rem;
+ }
+
+ #contact img {
+     max-width: 100%;
+ }
+
+ #contact form {
+     border-radius: 20px;
+     background-color: #26A682;
+ }
+
+form {
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+ form h3 {
+     font-size: 2rem;
+     font-family: raleway;
+     color: #F2F2F2;
+     padding-bottom: 15px;
+     text-align: center;
+     font-weight: bold;
+ }
+
+ form input {
+     border-radius: 10px;
+     margin: 15px;
+     padding: 0;
+     width: 95%;
+     border-style: none;
+     padding: 10px;
+ }
+
+form label {
+    color: #F2F2F2;
+    padding-left: 15px;
+}
+
+form button {
+    background-color: #3C3B3A;
+    font-size: 2rem;
+    color: #F2F2F2;
+    border-radius: 20px;
+    margin: 15px;
+    width: 95%;
+}
+
+#contact h4 {
+    font-family: raleway;
+    font-size: 1.5rem;
+    color: #3C3B3A;
+    padding-top: 15px;
+}
+
+iframe {
+    padding-top: 10px;
+} 
+
+
+/* DESKTOP */
+
+@media screen and (min-width: 1200px) {
+    #contact {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 0 1fr 1fr 1fr;
+    }
+
+    #contact h2 .top{
+text-align: left;
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    #contact p .top{
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    #contact img{
+        max-width: 500px;
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    #contact h4{
+        grid-column: 1;
+        grid-row:5;
+    }
+
+    #contact h2 .bottom{
+        grid-column: 1;
+        grid-row: 4;
+    }
+
+    #contact p .bottom{
+        grid-column: 1;
+        grid-row: 6;
+    }
+
+    #contact form{
+        grid-column: 2;
+        grid-row:  1 / span 3;
+    }
+
+    #contact iframe{
+        grid-column: 2;
+        grid-row: 4 / span 3;
+    }
+
+}
 
 
 
