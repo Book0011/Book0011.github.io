@@ -147,12 +147,14 @@ body {
     /* Nav Bar */
 
     a {
+        font-family: orbitron;
         text-decoration: none;
-        color: #DCE0E7;
+        color: whitesmoke;
     }
     
     a:hover {
         color: #56EEF4;
+        text-decoration: underline;
     }
 
 nav {
@@ -161,8 +163,8 @@ nav {
     text-align: center;
     padding: 25px;
     grid-gap: 15px;
-    font-size: 2rem;
-    color: #DCE0E7;
+    font-size: 1.5rem;
+    color: whitesmoke;
 }
 
 
@@ -170,8 +172,8 @@ nav {
 h1 {
     text-align: center;
     font-family: open sans;
-    color:#DCE0E7;
-    font-size: 2rem;
+    color:whitesmoke;
+    font-size: 1.5rem;
     font-weight: 400;
     padding: 25px;
 
@@ -192,7 +194,7 @@ h4 {
     animation: type 6s steps(29) infinite;
     overflow: hidden;
     white-space: nowrap;
-    font-family: open sans;
+    font-family: orbitron;
     color:#DCE0E7;
     font-size: 1.5rem;
     font-weight: 400;
@@ -210,6 +212,10 @@ h4 {
     }
 }
 
+hr{
+    border-top: 1px solid #56EEF4 ;
+}
+
 /* about section */
 
 .about{
@@ -220,8 +226,8 @@ h4 {
     grid-row: 1;
     text-align: center;
     font-family: open sans;
-    color:#DCE0E7;
-    font-size: 2rem;
+    color:whitesmoke;
+    font-size: 1.5rem;
     font-weight: 400;
     padding: 25px;
 }
@@ -236,8 +242,9 @@ h4 {
 
 .about p{
     padding: 15px;
+    font-family: open sans;
     font-size: 1.5rem;
-    color: #dce0e7d0;
+    color: whitesmoke;
 }
 
 /* Work Section */
@@ -250,8 +257,8 @@ h4 {
     grid-row: 1;
     text-align: center;
     font-family: open sans;
-    color:#DCE0E7;
-    font-size: 2rem;
+    color:whitesmoke;
+    font-size: 1.5rem;
     font-weight: 400;
     padding: 25px;
 }
@@ -259,8 +266,8 @@ h4 {
 .work h3 {
     text-align: center;
     font-family: open sans;
-    color:#DCE0E7;
-    font-size: 2rem;
+    color:whitesmoke;
+    font-size: 1.5rem;
     font-weight: 400;
     padding: 25px;
 }
@@ -281,24 +288,183 @@ h4 {
 .paint p {
         padding: 15px;
         font-size: 1.5rem;
-        color: #dce0e7d0;
+        font-family: open sans;
+        color: whitesmoke;
+        line-height: 2rem;
 }
 
 
+/* Skills Section*/
 
 
 
+.title h2 {
+    text-align: center;
+    font-family: open sans;
+    color:whitesmoke;
+    font-size: 2.5rem;
+    font-weight: 400;
+    padding: 25px;
+}
 
 
 .skills img{
-    max-width: 30px;
+    max-width: 100%;
 }
 
-.skills h2 {
+.skills p{
+    padding: 15px;
+    font-size: 1.5rem;
+    font-family: open sans;
+    color: whitesmoke;
+    line-height: 2rem;
+}
+
+
+.skills h3 {
     text-align: center;
     font-family: open sans;
-    color:#DCE0E7;
+    color:whitesmoke;
     font-size: 2rem;
     font-weight: 400;
     padding: 25px;
+}
+
+/* footer */
+
+footer {
+    text-align: right;
+    padding-top: 15px;
+    font-family: orbitron;
+    color: whitesmoke;
+}
+
+
+/* FOR TABLETS */
+
+@media screen and (min-width: 720px) {
+
+    .google {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 3fr 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .skills img{
+        max-width: 50%;
+        justify-self: center;
+    }
+    .adobe {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 3fr 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .business {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 3fr 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+
+/* FOR DESKTOP */
+
+@media screen and (min-width: 1200px) {
+
+    body{
+        padding-left: 150px;
+        padding-right: 150px;
+    }
+
+    nav{
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr 1fr 1fr 2fr;
+        grid-template-rows: 1fr;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about-me{
+        grid-column: 2;
+    }    
+
+    .my-work{
+        grid-column: 3;
+    }
+
+    .my-skills{
+        grid-column: 4;
+    }
+
+    .contact-me{
+        grid-column: 5;
+    }
+
+    hr {
+        max-width: 50%;
+    }
+    
+    h1 {
+        font-size: 4rem;
+        padding-top: 75px;
+    }
+
+    h4{
+        font-size: 3rem;
+        margin-bottom: 300px;
+    }
+
+    .about {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .about img{
+        grid-column: 1;
+        grid-row: 1 / span 2;
+    }
+
+    .about h2{
+        font-size: 3rem;
+        justify-self: start;
+    }
+
+    .work h2 {
+        font-size: 3rem;
+        padding: 50px;
+    }
+
+    .paint{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .paint img{
+        grid-column: 1;
+        grid-row: 1 / span 2;
+        max-width: 100%;
+        align-self: center;
+    }
+
+    .skills {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: 3fr .5fr .5fr;
+    }
+
+.title h2{
+    font-size: 3rem;
+    padding: 50px;
+    padding-top: 200px;
+}
+
 }
