@@ -157,6 +157,8 @@ body {
         text-decoration: underline;
     }
 
+    /* creaating nav bar grid */
+
 nav {
     display: grid;
     grid-template-rows: repeat(4, 1fr);
@@ -212,6 +214,8 @@ h4 {
     }
 }
 
+/* adding line break */
+
 hr{
     border-top: 1px solid #56EEF4 ;
 }
@@ -222,6 +226,8 @@ hr{
     display: grid;
 }
 
+/* assigning grid locations */
+
 .about h2{
     grid-row: 1;
     text-align: center;
@@ -231,7 +237,7 @@ hr{
     font-weight: 400;
     padding: 25px;
 }
-
+/* assigning grid locations and adjusting image size */
 .about img{
     grid-row: 2;
     justify-self: center;
@@ -239,7 +245,7 @@ hr{
     max-width: 300px;
 
 }
-
+/* assigning grid locations */
 .about p{
     padding: 15px;
     font-family: open sans;
@@ -252,7 +258,7 @@ hr{
 .work {
     display: grid;
 }
-
+/* assigning grid locations */
 .work h2 {
     grid-row: 1;
     text-align: center;
@@ -262,7 +268,7 @@ hr{
     font-weight: 400;
     padding: 25px;
 }
-
+/* assigning grid locations */
 .work h3 {
     text-align: center;
     font-family: open sans;
@@ -271,14 +277,14 @@ hr{
     font-weight: 400;
     padding: 25px;
 }
-
+/* assigning grid locations and adjusting image size*/
 .work img{
     max-height: 300px;
     justify-self: center;
     align-items: center;
     max-width: 300px;
 }
-
+/* assigning grid locations */
 .paint{
     padding-top: 50px;
     display: grid;
@@ -307,11 +313,12 @@ hr{
     padding: 25px;
 }
 
-
+/* adjusting image size */
 .skills img{
     max-width: 100%;
 }
 
+/* formatting the skills section */
 .skills p{
     padding: 15px;
     font-size: 1.5rem;
@@ -343,7 +350,7 @@ footer {
 /* FOR TABLETS */
 
 @media screen and (min-width: 720px) {
-
+/* assigning grid layout */
     .google {
         display: grid;
         grid-template-columns: 1fr;
@@ -351,7 +358,7 @@ footer {
         justify-content: center;
         align-items: center;
     }
-
+/* assigning grid locations and adjusting sizes */
     .skills img{
         max-width: 50%;
         justify-self: center;
@@ -378,12 +385,12 @@ footer {
 /* FOR DESKTOP */
 
 @media screen and (min-width: 1200px) {
-
+/* adjusting padding of page */
     body{
         padding-left: 150px;
         padding-right: 150px;
     }
-
+/* re aligning the nav bar to be horizontal */
     nav{
         display: grid;
         grid-template-columns: 2fr 1fr 1fr 1fr 1fr 2fr;
@@ -391,7 +398,7 @@ footer {
         justify-content: center;
         align-items: center;
     }
-
+/* re-assigning grid locations */
     .about-me{
         grid-column: 2;
     }    
@@ -421,7 +428,7 @@ footer {
         font-size: 3rem;
         margin-bottom: 300px;
     }
-
+/* re organizing about section with grid layout */
     .about {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -437,7 +444,7 @@ footer {
         font-size: 3rem;
         justify-self: start;
     }
-
+/* re organizing work section with grid layout */
     .work h2 {
         font-size: 3rem;
         padding: 50px;
@@ -454,7 +461,7 @@ footer {
         max-width: 100%;
         align-self: center;
     }
-
+/* re organizing skills section with grid layout */
     .skills {
         display: grid;
         grid-template-columns: repeat(3,1fr);
