@@ -1,0 +1,25 @@
+@media screen and (min-width: 720px) {}
+
+img {
+    width: 49%;
+    height: auto;
+}
+
+body {
+    background-color: black;
+}
+
+
+
+@media screen and (max-width: 1200px) {
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    div {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(15, 1fr);
+    }
+}
